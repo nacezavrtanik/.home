@@ -144,7 +144,6 @@ git config --global diff.interhunkcontext 3
 git config --global difftool.prompt false
 git config --global alias.df 'difftool'
 git config --global alias.adog 'log --all --graph --pretty=custom-oneline'
-git config --global alias.adof '! git_pretty_log_with_fzf.sh'
 git config --global trailer.ifExists addIfDifferent
 echo "  git: done"
 
