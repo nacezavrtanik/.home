@@ -142,7 +142,10 @@ git config --global diff.tool nvimdiff
 git config --global diff.noprefix true
 git config --global diff.interhunkcontext 3
 git config --global difftool.prompt false
+git config --global merge.tool nvimdiff1
+git config --global mergetool.keepbackup false
 git config --global alias.df 'difftool'
+git config --global alias.mr 'mergetool'
 git config --global alias.adog 'log --all --graph --pretty=custom-oneline'
 git config --global trailer.ifExists addIfDifferent
 echo "  git: done"
