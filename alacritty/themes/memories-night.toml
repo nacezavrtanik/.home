@@ -1,0 +1,37 @@
+# The Memories colorscheme for Alacritty.
+
+# Loosely based on SeaShells:
+# https//raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/SeaShells.itermcolors
+
+
+[colors.primary]
+background = '#000000'
+foreground = '#e5c49e'
+
+[colors.cursor]
+text = '#061923'
+cursor = '#feaf3c'
+
+[colors.selection]
+text = '#e5c49e'
+background = '#154057'
+
+[colors.normal]
+black = '#000000'
+red = '#db662d'
+green = '#24604a'
+yellow = '#feaf3c'
+blue = '#255a62'
+magenta = '#822847'
+cyan = '#1a7776'
+white = '#e5c49e'
+
+[colors.bright]
+black = '#202020'
+red = '#fb864d'
+green = '#44806a'
+yellow = '#ffbb65'
+blue = '#457a82'
+magenta = '#a24867'
+cyan = '#3a9796'
+white = '#ffdeba'
