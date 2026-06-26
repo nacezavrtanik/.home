@@ -1,21 +1,20 @@
-" Name:         memories
+" Name:         memories-night
 " Description:  A very minimal 4-bit colorscheme.
 " Author:       Nace Zavrtanik <zavrtaniknace@gmail.com>
 " Website:      https://www.github.com/nacezavrtanik/dotfiles
 " License:      MIT
 
 " The 4-bit ANSI colors, as well as the backround color, are inherited from
-" the terminal theme. Note that since `memories` uses black (ANSI 0) as an
-" actual color, this will render certain highlight groups invisible for
-" terminal themes that do not distingish black from the background.
-
-" Loosely based on the `lunaperche` Vim colorscheme.
+" the terminal theme. This colorscheme is a variation of the `memories`
+" colorscheme, which, as opposed to `memories`, does not use the black (ANSI
+" 0) color. This makes all text visibile even in terminals which define black
+" as the background color.
 
 
 set background=dark
 
 hi clear
-let g:colors_name = 'memories'
+let g:colors_name = 'memories-night'
 
 
 hi! link helpVim Title
@@ -159,15 +158,15 @@ hi! link @markup.heading.5             MagentaOnNoneItalic
 hi! link @markup.heading.6             MagentaOnNoneItalic
 hi! link @markup.link                  GreenOnNone
 hi! link @markup.link.label            GreenOnNone
-hi! link @markup.link.url              BlackOnNoneItalicUnderline
+hi! link @markup.link.url              BrightBlackOnNoneItalicUnderline
 hi! link @markup.list                  MagentaOnNone
 hi! link @markup.list.checked          MagentaOnNone
 hi! link @markup.list.unchecked        CyanOnNone
 hi! link @markup.raw                   CyanOnNone
 hi! link @markup.quote                 WhiteOnNoneItalic
 hi! link @markup.math                  CyanOnNone
-hi! link @label.markdown               BlackOnNone
-hi! link @punctuation.special.markdown BlackOnNone
+hi! link @label.markdown               BrightBlackOnNone
+hi! link @punctuation.special.markdown BrightBlackOnNone
 
 hi! link @comment.error   Todo
 hi! link @comment.warning Todo
@@ -181,37 +180,37 @@ hi! link WildMenu      WhiteOnNoneBold
 hi! link Title         WhiteOnNoneBold
 hi! link Identifier    WhiteOnNoneBold
 hi! link Function      WhiteOnNoneBold
-hi! link QuickFixLine  WhiteOnBlack
-hi! link Pmenu         WhiteOnBlack
-hi! link PmenuInfo     BrightBlackOnBlackItalic
+hi! link QuickFixLine  WhiteOnBrightBlack
+hi! link Pmenu         WhiteOnBrightBlack
+hi! link PmenuInfo     WhiteOnBrightBlackItalic
 hi! link PmenuThumb    WhiteOnWhite
-hi! link TabLineFill   BlackOnNone
-hi! link WinSeparator  BlackOnNone
-hi! link FoldColumn    BlackOnNone
-hi! link NonText       BlackOnNoneItalic
-hi! link SpecialKey    BlackOnNoneItalic
-hi! link EndOfBuffer   BlackOnNoneItalic
+hi! link TabLineFill   BrightBlackOnNone
+hi! link WinSeparator  BrightBlackOnNone
+hi! link FoldColumn    BrightBlackOnNone
+hi! link NonText       BrightBlackOnNoneItalic
+hi! link SpecialKey    BrightBlackOnNoneItalic
+hi! link EndOfBuffer   BrightBlackOnNoneItalic
 hi! link Comment       BrightBlackOnNoneItalic
 hi! link Folded        BrightBlackOnNoneItalic
-hi! link PmenuSel      BlackOnWhite
-hi! link ComplMatchIns BlackOnWhite
-hi! link PreInsert     BlackOnWhite
-hi! link Statusline    BlackOnWhiteBold
-hi! link TabLineSel    BlackOnWhiteBold
-hi! link PmenuInfoSel  BlackOnWhiteItalic
-hi! link PmenuSbar     BlackOnBlack
-hi! link ColorColumn   NoneOnBlack
-hi! link CursorColumn  NoneOnBlack
-hi! link CursorLine    NoneOnBlack
+hi! link PmenuSel      BrightBlackOnWhite
+hi! link ComplMatchIns BrightBlackOnWhite
+hi! link PreInsert     BrightBlackOnWhite
+hi! link Statusline    BrightBlackOnWhiteBold
+hi! link TabLineSel    BrightBlackOnWhiteBold
+hi! link PmenuInfoSel  BrightBlackOnWhiteItalic
+hi! link PmenuSbar     BrightBlackOnBrightBlack
+hi! link ColorColumn   NoneOnBrightBlack
+hi! link CursorColumn  NoneOnBrightBlack
+hi! link CursorLine    NoneOnBrightBlack
 
 hi! link Search       YellowOnNone
 hi! link CursorLineNr YellowOnNoneBold
 hi! link MatchParen   YellowOnNoneBold
 hi! link CurSearch    YellowOnBlueBold
 hi! link LineNr       BlueOnNone
-hi! link IncSearch    BlackOnYellow
-hi! link Cursor       BlackOnYellow
-hi! link Visual       BlackOnYellow
+hi! link IncSearch    BrightBlackOnYellow
+hi! link Cursor       BrightBlackOnYellow
+hi! link Visual       BrightBlackOnYellow
 
 hi! link ModeMsg      RedOnNoneBoldReverse
 hi! link ErrorMsg     RedOnNoneBold
@@ -230,8 +229,8 @@ hi! link String    CyanOnNone
 
 hi! link DiffAdd    WhiteOnBrightGreen
 hi! link DiffText   WhiteOnBrightBlue
-hi! link DiffChange NoneOnBlack
-hi! link DiffDelete BlackOnNone
+hi! link DiffChange NoneOnBrightBlack
+hi! link DiffDelete BrightBlackOnNone
 
 hi NoneOnBlack                      ctermfg=none ctermbg=0    cterm=none
 hi NoneOnBrightBlack                ctermfg=none ctermbg=8    cterm=none
