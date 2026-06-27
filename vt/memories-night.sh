@@ -1,3 +1,4 @@
+#!/bin/bash
 
 printf '\e]P0000000'
 printf '\e]P1db662d'
