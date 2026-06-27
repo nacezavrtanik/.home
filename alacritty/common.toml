@@ -1,8 +1,4 @@
 
-import = [
-    "~/dotfiles/alacritty/themes/memories.toml"
-]
-
 [window]
 opacity = 1.0
 decorations = "None"
