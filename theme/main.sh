@@ -41,6 +41,21 @@ else
 fi
 
 
+# ALACRITTY
+file=~/dotfiles/alacritty/local.toml
+value=$(head -n 1 $config_dir/alacritty)
+new_line=$"    \"~/dotfiles/alacritty/themes/$value.toml\","
+if existing_line="$(grep -xm1 ' *"~/dotfiles/alacritty/themes/.\+\.toml",' $file)"; then
+    sed -i -e "s|$existing_line|$new_line|" $file
+else
+    cat << EOF >> $file
+import = [
+$new_line
+]
+EOF
+fi
+
+
 # TMUX
 file=~/dotfiles/tmux/tmux.local.conf
 value=$(head -n 1 $config_dir/tmux)
