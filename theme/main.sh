@@ -40,3 +40,14 @@ else
     echo $new_line >> $file
 fi
 
+
+# TMUX
+file=~/dotfiles/tmux/tmux.local.conf
+value=$(head -n 1 $config_dir/tmux)
+new_line=$"source-file ~/dotfiles/tmux/colors/tmux.$value.conf"
+if existing_line="$(grep -xm1 'source-file ~/dotfiles/tmux/colors/tmux\..\+\.conf' $file)"; then
+    sed -i -e "s|$existing_line|$new_line|" $file
+else
+    echo $new_line >> $file
+fi
+
