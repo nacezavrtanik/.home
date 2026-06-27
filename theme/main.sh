@@ -6,7 +6,7 @@ fi
 
 config_dir=~/dotfiles/theme/config/$1
 if ! [[ -d $config_dir ]]; then
-    echo invalid >&2
+    echo invalid theme: $1 >&2
     exit 1
 fi
 
