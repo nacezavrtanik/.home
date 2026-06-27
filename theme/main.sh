@@ -29,3 +29,14 @@ fi
 EOF
 fi
 
+
+# NVIM
+file=~/dotfiles/nvim/lua/local.lua
+value=$(head -n 1 $config_dir/nvim)
+new_line=$"vim.cmd.colorscheme(\"$value\")"
+if existing_line="$(grep -xm1 'vim.cmd.colorscheme(".\+")' $file)"; then
+    sed -i -e "s|$existing_line|$new_line|" $file
+else
+    echo $new_line >> $file
+fi
+
