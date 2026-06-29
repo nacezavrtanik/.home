@@ -1,0 +1,19 @@
+#!/bin/bash
+
+printf '\e]P0000000'
+printf '\e]P1333333'
+printf '\e]P2555555'
+printf '\e]P3777777'
+printf '\e]P4999999'
+printf '\e]P5bbbbbb'
+printf '\e]P6dddddd'
+printf '\e]P7ffffff'
+printf '\e]P8000000'
+printf '\e]P9333333'
+printf '\e]Pa555555'
+printf '\e]Pb777777'
+printf '\e]Pc999999'
+printf '\e]Pdbbbbbb'
+printf '\e]Pedddddd'
+printf '\e]Pfffffff'
+
