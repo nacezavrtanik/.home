@@ -173,7 +173,6 @@ hi! link @comment.warning Todo
 hi! link @comment.todo    Todo
 hi! link @comment.note    Note
 
-hi! link Normal        MagentaOnNone
 hi! link StatuslineNC  MagentaOnNone
 hi! link TabLine       MagentaOnNone
 hi! link WildMenu      WhiteOnGreenBold
@@ -232,6 +231,8 @@ hi! link DiffText   WhiteOnYellow
 hi! link DiffChange YellowOnRed
 hi! link DiffDelete BlackOnNone
 
+" We intentionally omit configuring the Normal highlight group, so the default
+" background and foreground are inherited from the terminal theme.
 hi NoneOnNoneReverse                ctermfg=none ctermbg=none cterm=reverse
 hi NoneOnBlack                      ctermfg=none ctermbg=0    cterm=none
 hi NoneOnRed                        ctermfg=none ctermbg=1    cterm=none
