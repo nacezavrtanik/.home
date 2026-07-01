@@ -296,7 +296,10 @@ And remember putting plasters on the galls of his neck and ankles;
 He staid with me a week before he was recuperated and pass’d north,
 I had him sit next me at table, my fire-lock lean’d in the corner.
 
+
 11
+--
+
 Twenty-eight young men bathe by the shore,
 Twenty-eight young men and all so friendly;
 Twenty-eight years of womanly life and all so lonesome.
@@ -323,7 +326,10 @@ The young men float on their backs, their white bellies bulge to the sun, they d
 They do not know who puffs and declines with pendant and bending arch,
 They do not think whom they souse with spray.
 
+
 12
+--
+
 The butcher-boy puts off his killing-clothes, or sharpens his knife at the stall in the market,
 I loiter enjoying his repartee and his shuffle and break-down.
 
@@ -606,7 +612,10 @@ My foothold is tenon’d and mortis’d in granite,
 I laugh at what you call dissolution,
 And I know the amplitude of time.
 
+
 21
+--
+
 I am the poet of the Body and I am the poet of the Soul,
 The pleasures of heaven are with me and the pains of hell are with me,
 The first I graft and increase upon myself, the latter I translate into a new tongue.
@@ -641,7 +650,10 @@ Smile, for your lover comes.
 Prodigal, you have given me love—therefore I to you give love!
 O unspeakable passionate love.
 
+
 22
+--
+
 You sea! I resign myself to you also—I guess what you mean,
 I behold from the beach your crooked inviting fingers,
 I believe you refuse to go back without feeling of me,
