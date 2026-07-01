@@ -110,11 +110,19 @@ vim.keymap.set("n", "<Leader>cl", ":clast<CR>")
 vim.api.nvim_create_autocmd(
   { "QuickFixCmdPost" },
   {
-    desc = "Open QF window after grep if any matches, close otherwise",
+    desc = "Open QF window (vertically) if any matches, close otherwise",
     group = user_augroup,
-    pattern = "grep",
+    pattern = "*",
     callback = function()
-      vim.cmd.cwindow()
+      local qf = vim.fn.getqflist({ size = 0 })
+
+      if qf.size == 0 then
+        vim.cmd.cclose()
+        return
+      end
+
+      vim.cmd("botright vertical copen")
+      vim.cmd.wincmd("=")
     end,
   }
 )
