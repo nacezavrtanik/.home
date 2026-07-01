@@ -178,7 +178,7 @@ hi! link StatuslineNC  WhiteOnNone
 hi! link TabLine       WhiteOnNone
 hi! link WildMenu      WhiteOnNoneBold
 hi! link Title         WhiteOnNoneBold
-hi! link Identifier    WhiteOnNoneBold
+hi! link Identifier    WhiteOnNone
 hi! link Function      WhiteOnNoneBold
 hi! link QuickFixLine  WhiteOnBlack
 hi! link Pmenu         WhiteOnBlack
