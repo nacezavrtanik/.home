@@ -1,2 +1,0 @@
-#!/bin/bash
-. ~/dotfiles/color/main.sh "$@"
