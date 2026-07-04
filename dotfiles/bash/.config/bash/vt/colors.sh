@@ -1,0 +1,1 @@
+../../../../../lib/theme/colors/night/bash/.config/bash/vt/colors.sh

@@ -1,0 +1,11 @@
+fzf_color='16,'\
+'border:0,'\
+'preview-border:2,'\
+'pointer:2,'\
+'hl+:2,'\
+'prompt:4,'\
+'hl:4,'\
+'marker:5,'\
+'gutter:-1,'\
+'bg+:-1,'\
+'fg+:-1'

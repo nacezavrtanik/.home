@@ -6,7 +6,7 @@ vim.g.mapleader = " "
 vim.o.mouse = ""
 
 vim.o.termguicolors = false
-vim.cmd.colorscheme("night")
+vim.cmd.colorscheme("custom")
 vim.o.cursorline = true
 vim.o.cursorlineopt = "number"
 vim.api.nvim_create_autocmd(
