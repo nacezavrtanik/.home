@@ -3,7 +3,7 @@
 set -o errexit -o nounset
 
 
-stow_dir=~/dotfiles
+stow_dir=~/dotfiles/dotfiles
 target_dir=~
 
 stow_config() { stow --dir=$stow_dir --target=$target_dir "$@" ; }

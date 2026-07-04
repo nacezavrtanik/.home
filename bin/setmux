@@ -31,11 +31,11 @@ tmux new-session -d -s $s
 tmux new-window -t $s
 echo "$((sess_num++)): $s"
 
-if [[ -f ~/dotfiles/tmux/.config/tmux/sessions.sh ]]; then
-    . ~/dotfiles/tmux/.config/tmux/sessions.sh $sess_num
+if [[ -f ~/.config/tmux/sessions.sh ]]; then
+    . ~/.config/tmux/sessions.sh $sess_num
 fi
 cp --update=none \
-    ~/dotfiles/tmux/.config/tmux/tmux.sessions_template.conf \
-    ~/dotfiles/tmux/.config/tmux/tmux.sessions.conf
+    ~/.config/tmux/tmux.sessions_template.conf \
+    ~/.config/tmux/tmux.sessions.conf
 
 exec tmux attach-session -t $initial

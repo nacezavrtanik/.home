@@ -1,9 +1,9 @@
 # Machine-specific config files/dirs
-bash/dot-bashrc-local
-tmux/.config/tmux/tmux.local.conf
-alacritty/.config/alacritty/local.toml
-vim/dot-vimrc-local
-nvim/.config/nvim/lua/local.lua
+dotfiles/bash/dot-bashrc-local
+dotfiles/tmux/.config/tmux/tmux.local.conf
+dotfiles/alacritty/.config/alacritty/local.toml
+dotfiles/vim/dot-vimrc-local
+dotfiles/nvim/.config/nvim/lua/local.lua
 
 # notes and todos for use with shlf command
 .shelf/
@@ -12,5 +12,5 @@ nvim/.config/nvim/lua/local.lua
 .theme
 
 # tmux sessions setup
-tmux/.config/tmux/sessions.sh
-tmux/.config/tmux/tmux.sessions.conf
+dotfiles/tmux/.config/tmux/sessions.sh
+dotfiles/tmux/.config/tmux/tmux.sessions.conf

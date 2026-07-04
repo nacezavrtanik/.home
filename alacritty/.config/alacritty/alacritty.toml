@@ -1,5 +1,0 @@
-import = [
-    "~/dotfiles/alacritty/.config/alacritty/themes/night.toml",
-    "~/dotfiles/alacritty/.config/alacritty/common.toml",
-    "~/dotfiles/alacritty/.config/alacritty/local.toml",
-]
