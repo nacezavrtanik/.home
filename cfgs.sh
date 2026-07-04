@@ -4,43 +4,29 @@ set -o errexit -o nounset
 
 echo "INIT: configs"
 
+
 stow_dir=~/dotfiles
-backup_dir=~/.stow-backup
-mkdir --parents $backup_dir
+target_dir=~
+
+stow_config() { stow --dir="$stow_dir" --target="$target_dir" "$@" ; }
+
 
 touch $stow_dir/bash/dot-bashrc-local
-stow --adopt --dotfiles bash
+stow_config --adopt --dotfiles bash
 
 touch $stow_dir/vim/dot-vimrc-local
-stow --adopt --dotfiles vim
+stow_config --adopt --dotfiles vim
+
+touch $stow_dir/tmux/.config/tmux/tmux.local.conf
+# TODO: Implement with --dotfiles once 2.4.1 is available.
+stow_config --adopt tmux
+
+touch $stow_dir/alacritty/.config/alacritty/local.toml
+# TODO: Implement with --dotfiles once 2.4.1 is available.
+stow_config --adopt alacritty
 
 # TODO: check git diff for adoptions
 
-# # TMUX
-# name=.tmux.conf
-# current=~/"$name"
-# bin=~/dotfiles/tmux/"$name"
-# if diff --new-file "$current" "$bin" > /dev/null; then
-#     echo "  tmux: skipped"
-# else
-#     touch ~/dotfiles/tmux/tmux.local.conf
-#     cp --backup=numbered "$bin" "$current"
-#     echo "  tmux: done"
-# fi
-
-# # ALACRITTY
-# name=alacritty.toml
-# current=~/.config/alacritty/"$name"
-# bin=~/dotfiles/alacritty/"$name"
-# if diff --new-file "$current" "$bin" > /dev/null; then
-#     echo "  alacritty: skipped"
-# else
-#     touch ~/dotfiles/alacritty/local.toml
-#     mkdir --parents ~/.config/alacritty
-#     cp --backup=numbered "$bin" "$current"
-#     echo "  alacritty: done"
-# fi
-#
 # # GIT
 # git config --global include.path '~/dotfiles/git/.gitconfig'
 # echo "  git: done"
