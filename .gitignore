@@ -1,5 +1,5 @@
 # Machine-specific config files/dirs
-bash/local.sh
+bash/dot-bashrc-local
 tmux/.config/tmux/tmux.local.conf
 alacritty/.config/alacritty/local.toml
 vim/local.vim
