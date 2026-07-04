@@ -23,7 +23,7 @@ else
     cd - > /dev/null
     rm -rf $nvim_repo
     nvim --version
-    touch ~/dotfiles/nvim/lua/local.lua
+    touch ~/dotfiles/nvim/.config/nvim/lua/local.lua
 fi
 
 if [[ ! -d ~/repos/shlf ]]; then

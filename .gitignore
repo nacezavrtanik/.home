@@ -3,7 +3,7 @@ bash/local.sh
 tmux/tmux.local.conf
 alacritty/local.toml
 vim/local.vim
-nvim/lua/local.lua
+nvim/.config/nvim/lua/local.lua
 
 # notes and todos for use with shlf command
 .shelf/
