@@ -1,6 +1,0 @@
-# Do not modify this file! Add any changes to the local config, instead.
-
-import = [
-    "~/dotfiles/alacritty/common.toml",
-    "~/dotfiles/alacritty/local.toml",
-]

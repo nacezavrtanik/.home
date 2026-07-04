@@ -1,0 +1,6 @@
+# Do not modify this file! Add any changes to the local config, instead.
+
+import = [
+    "~/dotfiles/alacritty/.config/alacritty/common.toml",
+    "~/dotfiles/alacritty/.config/alacritty/local.toml",
+]

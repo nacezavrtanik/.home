@@ -1,7 +1,7 @@
 # Machine-specific config files/dirs
 bash/local.sh
 tmux/tmux.local.conf
-alacritty/local.toml
+alacritty/.config/alacritty/local.toml
 vim/local.vim
 nvim/.config/nvim/lua/local.lua
 
