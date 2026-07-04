@@ -1,6 +1,6 @@
 # Machine-specific config files/dirs
 bash/local.sh
-tmux/tmux.local.conf
+tmux/.config/tmux/tmux.local.conf
 alacritty/.config/alacritty/local.toml
 vim/local.vim
 nvim/.config/nvim/lua/local.lua
@@ -12,5 +12,5 @@ nvim/.config/nvim/lua/local.lua
 .theme
 
 # tmux sessions setup
-tmux/sessions.sh
-tmux/tmux.sessions.conf
+tmux/.config/tmux/sessions.sh
+tmux/.config/tmux/tmux.sessions.conf
