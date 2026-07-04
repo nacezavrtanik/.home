@@ -11,8 +11,8 @@ mkdir --parents $backup_dir
 touch $stow_dir/bash/dot-bashrc-local
 stow --adopt --dotfiles bash
 
-
-# stow --adopt vim
+touch $stow_dir/vim/dot-vimrc-local
+stow --adopt --dotfiles vim
 
 # TODO: check git diff for adoptions
 

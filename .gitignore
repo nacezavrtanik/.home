@@ -2,7 +2,7 @@
 bash/dot-bashrc-local
 tmux/.config/tmux/tmux.local.conf
 alacritty/.config/alacritty/local.toml
-vim/local.vim
+vim/dot-vimrc-local
 nvim/.config/nvim/lua/local.lua
 
 # notes and todos for use with shlf command
