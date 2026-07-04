@@ -1,2 +1,2 @@
 #!/bin/bash
-. ~/dotfiles/recite/main.sh "$@"
+. ~/dotfiles/lib/recite/main.sh "$@"
