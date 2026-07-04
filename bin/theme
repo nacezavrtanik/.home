@@ -1,2 +1,2 @@
 #!/bin/bash
-exec ~/dotfiles/theme/main.sh "$@"
+exec ~/dotfiles/lib/theme/main.sh "$@"
