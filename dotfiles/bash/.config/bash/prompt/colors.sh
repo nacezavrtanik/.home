@@ -1,1 +1,0 @@
-../../../../../lib/theme/colors/night/bash/.config/bash/prompt/colors.sh

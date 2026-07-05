@@ -1,14 +1,17 @@
 # Machine-specific config files
-dotfiles/bash/dot-bashrc-local
-dotfiles/tmux/.config/tmux/tmux.local.conf
 dotfiles/alacritty/.config/alacritty/local.toml
-dotfiles/vim/dot-vimrc-local
+dotfiles/bash/dot-bashrc-local
 dotfiles/nvim/.config/nvim/lua/local.lua
+dotfiles/tmux/.config/tmux/tmux.local.conf
+dotfiles/vim/dot-vimrc-local
 
 # Theme-specific config files
-dotfiles/tmux/.config/tmux/tmux.colors.conf
 dotfiles/alacritty/.config/alacritty/colors.toml
+dotfiles/bash/.config/bash/fzf/colors.sh
+dotfiles/bash/.config/bash/prompt/colors.sh
+dotfiles/bash/.config/bash/vt/colors.sh
 dotfiles/nvim/.config/nvim/colors/custom.vim
+dotfiles/tmux/.config/tmux/tmux.colors.conf
 
 # notes and todos for use with shlf command
 .shelf/
