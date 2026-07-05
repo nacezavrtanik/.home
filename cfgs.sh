@@ -29,6 +29,8 @@ stow_config --adopt nvim
 
 stow_config --adopt bat
 
+stow_config --adopt ncdu
+
 stow_config --adopt calcure
 
 # We don't use stow for .gitconfig. The common config shared across machines
