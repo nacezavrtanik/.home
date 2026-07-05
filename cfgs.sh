@@ -27,6 +27,8 @@ touch $stow_dir/nvim/.config/nvim/lua/local.lua
 # TODO: Implement with --dotfiles once 2.4.1 is available.
 stow_config --adopt nvim
 
+stow_config --adopt bat
+
 stow_config --adopt calcure
 
 # We don't use stow for .gitconfig. The common config shared across machines

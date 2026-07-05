@@ -64,11 +64,8 @@ export PATH=~/dotfiles/bin:$PATH
 . ~/.config/bash/fzf/config.sh
 
 alias bat='batcat'
-export BAT_THEME=base16
-export BAT_STYLE=header,grid,numbers
-
-alias tree='tree --gitfile ~/dotfiles/git/.gitignore'
 alias ncdu='ncdu --color dark'
+alias tree='tree --gitfile ~/dotfiles/git/.gitignore'
 
 . ~/repos/shlf/lib/shlflib.sh
 shlflib_register_completion
