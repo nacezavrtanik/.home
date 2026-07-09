@@ -1,7 +1,7 @@
 #!/bin/bash
 set -o errexit -o nounset
 
-if $(tmux ls > /dev/null 2>&1); then
+if tmux has-session 2>/dev/null; then
     echo setmux: tmux server already running
     exit 1
 fi
