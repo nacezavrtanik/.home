@@ -1,6 +1,6 @@
 
-stow_dir=~/dotfiles/lib/theme/colors
-target_dir=~/dotfiles/dotfiles
+stow_dir=~/dotfiles/themes
+target_dir=~
 
 new_theme="$1"
 
@@ -24,4 +24,4 @@ touch ~/.config/alacritty/alacritty.toml
 if tmux has-session 2>/dev/null; then
     tmux source-file ~/.config/tmux/tmux.colors.conf
 fi
-. ~/.config/bash/vt/config.sh
+. ~/.config/bash/vt/colors.sh
