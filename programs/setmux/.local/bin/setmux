@@ -26,7 +26,6 @@ echo "$((sess_num++)): $s"
 
 s=home
 cd ~/.home
-shlf --create dotfiles 2> /dev/null || true
 tmux new-session -d -s $s
 tmux new-window -t $s
 echo "$((sess_num++)): $s"
