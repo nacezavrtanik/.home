@@ -1,7 +1,7 @@
 " Name:         night
 " Description:  A very minimal 3-bit colorscheme.
 " Author:       Nace Zavrtanik <zavrtaniknace@gmail.com>
-" Website:      https://www.github.com/nacezavrtanik/dotfiles
+" Website:      https://www.github.com/nacezavrtanik/.home
 " License:      MIT
 
 " The 4-bit ANSI colors, as well as the backround color, are inherited from

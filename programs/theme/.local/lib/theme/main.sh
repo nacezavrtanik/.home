@@ -1,5 +1,5 @@
 
-stow_dir=~/dotfiles/themes
+stow_dir=~/.home/themes
 target_dir=~
 
 new_theme="$1"

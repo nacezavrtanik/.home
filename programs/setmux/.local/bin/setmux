@@ -16,7 +16,7 @@ cd
 tmux new-session -d -s $s
 echo "$((sess_num++)): $s"
 
-s=home; initial=$s
+s=main; initial=$s
 cd
 tmux new-session -d -s $s
 tmux send-keys -t $s 'shlf --open todo' C-m
@@ -24,8 +24,8 @@ tmux new-window -t $s
 tmux select-window -t $s:1
 echo "$((sess_num++)): $s"
 
-s=dots
-cd ~/dotfiles
+s=home
+cd ~/.home
 shlf --create dotfiles 2> /dev/null || true
 tmux new-session -d -s $s
 tmux new-window -t $s

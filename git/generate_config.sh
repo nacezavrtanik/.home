@@ -36,7 +36,7 @@ custom_medium_format="$commit_long$decorations%n"\
 "%C(black italic)$rule%C(reset)"
 custom_reflog_format="$commit_short$decorations $reflog_selector %gs"
 
-configure() { git config --file ~/dotfiles/git/.gitconfig "$@"; }
+configure() { git config --file ~/.home/git/.gitconfig "$@"; }
 
 configure pretty.custom-oneline "$custom_oneline_format"
 configure pretty.custom-medium "$custom_medium_format"
@@ -79,7 +79,7 @@ configure alias.rl 'log --walk-reflogs --pretty=custom-reflog'
 configure blame.coloring 'highlightRecent'
 configure blame.date 'relative'
 configure core.editor 'nvim'
-configure core.excludesFile '~/dotfiles/git/.gitignore'
+configure core.excludesFile '~/.home/git/.gitignore'
 configure diff.interHunkContext 3
 configure diff.noprefix true
 configure diff.tool 'nvimdiff'

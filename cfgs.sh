@@ -3,7 +3,7 @@
 set -o errexit -o nounset
 
 
-stow_dir=~/dotfiles/dotfiles
+stow_dir=~/.home/dotfiles
 target_dir=~
 
 stow_config() { stow --dir=$stow_dir --target=$target_dir "$@" ; }
@@ -33,7 +33,7 @@ stow_config --adopt calcure
 # We don't use stow for .gitconfig. The common config shared across machines
 # lives in the repo and is sourced from the "local" global config. This allows
 # us to change the "local" global config as usual, with `git config --global`.
-git config --global include.path '~/dotfiles/git/.gitconfig'
+git config --global include.path '~/.home/git/.gitconfig'
 
 
 # Check if any changes were adopted with stow.

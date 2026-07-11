@@ -54,18 +54,18 @@ bind -m vi-insert '"\C-l": clear-screen'
 export EDITOR=nvim
 export VISUAl=nvim
 
-export PATH=~/dotfiles/bin:$PATH
+export PATH=~/.home/bin:$PATH
 
 . ~/.config/bash/vt/config.sh
 . ~/.config/bash/prompt/config.sh
 . ~/.config/bash/fzf/config.sh
 
 alias bat='batcat'
-alias tree='tree --gitfile ~/dotfiles/git/.gitignore'
+alias tree='tree --gitfile ~/.home/git/.gitignore'
 
 . ~/repos/shlf/lib/shlflib.sh
 shlflib_register_completion
-export SHLF_DIR=~/dotfiles/.shelf/
+export SHLF_DIR=~/.home/.shelf/
 export SHLF_EDITOR='nvim -O'
 export SHLF_PAGER='batcat --style=plain --color=always'
 export SHLF_GREP='rg --line-number --color=always'

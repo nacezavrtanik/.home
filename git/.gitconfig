@@ -44,7 +44,7 @@
 	date = relative
 [core]
 	editor = nvim
-	excludesFile = ~/dotfiles/git/.gitignore
+	excludesFile = ~/.home/git/.gitignore
 [diff]
 	interHunkContext = 3
 	noprefix = true
