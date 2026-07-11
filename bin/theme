@@ -1,2 +1,0 @@
-#!/bin/bash
-exec ~/dotfiles/lib/theme/main.sh "$@"
