@@ -1,9 +1,9 @@
 # Machine-specific config files
 dotfiles/alacritty/.config/alacritty/local.toml
-dotfiles/bash/dot-bashrc-local
+dotfiles/bash/.bashrc-local
 dotfiles/nvim/.config/nvim/lua/local.lua
 dotfiles/tmux/.config/tmux/tmux.local.conf
-dotfiles/vim/dot-vimrc-local
+dotfiles/vim/.vimrc-local
 
 # Theme-specific config files
 dotfiles/alacritty/.config/alacritty/colors.toml

@@ -9,22 +9,19 @@ target_dir=~
 stow_config() { stow --dir=$stow_dir --target=$target_dir "$@" ; }
 
 
-touch $stow_dir/bash/dot-bashrc-local
-stow_config --adopt --dotfiles bash
+touch $stow_dir/bash/.bashrc-local
+stow_config --adopt bash
 
-touch $stow_dir/vim/dot-vimrc-local
-stow_config --adopt --dotfiles vim
+touch $stow_dir/vim/.vimrc-local
+stow_config --adopt vim
 
 touch $stow_dir/tmux/.config/tmux/tmux.local.conf
-# TODO: Implement with --dotfiles once 2.4.1 is available.
 stow_config --adopt tmux
 
 touch $stow_dir/alacritty/.config/alacritty/local.toml
-# TODO: Implement with --dotfiles once 2.4.1 is available.
 stow_config --adopt alacritty
 
 touch $stow_dir/nvim/.config/nvim/lua/local.lua
-# TODO: Implement with --dotfiles once 2.4.1 is available.
 stow_config --adopt nvim
 
 stow_config --adopt bat
