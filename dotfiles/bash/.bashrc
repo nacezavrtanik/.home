@@ -61,7 +61,7 @@ export PATH=~/.home/bin:$PATH
 . ~/.config/bash/fzf/config.sh
 
 alias bat='batcat'
-alias tree='tree --gitfile ~/.home/git/.gitignore'
+alias tree='tree --gitfile ~/.gitignore-common'
 
 . ~/repos/shlf/lib/shlflib.sh
 shlflib_register_completion
