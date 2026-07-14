@@ -69,7 +69,6 @@ configure color.status.localBranch 'green bold'
 configure color.status.remoteBranch 'magenta bold'
 configure log.graphColors 'blue'
 
-configure include.path '~/.gitconfig-local'
 configure advice.detachedHead false
 configure advice.statusHints false
 configure advice.suggestDetachingHead false
@@ -77,6 +76,7 @@ configure alias.adog 'log --all --graph --pretty=custom-oneline'
 configure alias.df 'difftool'
 configure alias.mr 'mergetool'
 configure alias.rl 'log --walk-reflogs --pretty=custom-reflog'
+configure alias.shlf '!git -C $SHLF_DIR'
 configure blame.coloring 'highlightRecent'
 configure blame.date 'relative'
 configure core.editor 'nvim'
@@ -89,4 +89,6 @@ configure init.defaultBranch 'main'
 configure merge.tool 'nvimdiff1'
 configure mergetool.keepBackup false
 configure trailer.ifExists 'addIfDifferent'
+
+configure include.path '~/.gitconfig-local'
 

@@ -1,5 +1,3 @@
-[include]
-	path = ~/.gitconfig-local
 [pretty]
 	custom-oneline = %C(blue)%h%C(reset)%C(auto)%(decorate:pointer=%x1b%x5b%x33%x33m -> ,separator=%x1b%x5b%x33%x34m%x2c ,prefix=%x1b%x5b%x33%x34m (,suffix=%x1b%x5b%x33%x34m%x29) %s
 	custom-medium = %C(blue)%H%C(reset)%C(auto)%(decorate:pointer=%x1b%x5b%x33%x33m -> ,separator=%x1b%x5b%x33%x34m%x2c ,prefix=%x1b%x5b%x33%x34m (,suffix=%x1b%x5b%x33%x34m%x29)%n%C(brightblack)Author:%C(auto) %an %C(brightblack italic)<%ae>%C(reset)%n%C(brightblack)Date:  %C(auto) %ar %C(brightblack italic)<%ad>%C(reset)%n%n%C(white bold)%w(0,4)%s%C(reset)%n%C(white)%w(0,4,4)%+b%w()%C(reset)%n%C(black italic)--------------------------------------------------------------------------------%C(reset)
@@ -41,6 +39,7 @@
 	df = difftool
 	mr = mergetool
 	rl = log --walk-reflogs --pretty=custom-reflog
+	shlf = !git -C $SHLF_DIR
 [blame]
 	coloring = highlightRecent
 	date = relative
@@ -61,3 +60,5 @@
 	keepBackup = false
 [trailer]
 	ifExists = addIfDifferent
+[include]
+	path = ~/.gitconfig-local
