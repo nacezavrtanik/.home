@@ -1,6 +1,3 @@
-# notes and todos for use with shlf command
-.shelf/
-
 # tmux sessions setup
 dotfiles/tmux/.config/tmux/sessions.sh
 dotfiles/tmux/.config/tmux/tmux.sessions.conf

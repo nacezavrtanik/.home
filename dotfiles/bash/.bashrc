@@ -65,7 +65,7 @@ alias tree='tree --gitfile ~/.gitignore-common'
 
 . ~/repos/shlf/lib/shlflib.sh
 shlflib_register_completion
-export SHLF_DIR=~/.home/.shelf/
+export SHLF_DIR=~/repos/shelf
 export SHLF_EDITOR='nvim -O'
 export SHLF_PAGER='batcat --style=plain --color=always'
 export SHLF_GREP='rg --line-number --color=always'
