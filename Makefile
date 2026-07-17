@@ -2,8 +2,8 @@
 LOCAL = \
 	~/.bashrc-local \
 	~/.vimrc-local \
+	~/.gitconfig \
 	~/.config/alacritty/local.toml \
-	~/.config/git/config-local \
 	~/.config/nvim/lua/local.lua \
 	~/.config/tmux/tmux.local.conf
 DEFAULT_THEME = night

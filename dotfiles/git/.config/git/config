@@ -61,5 +61,3 @@
 	keepBackup = false
 [trailer]
 	ifExists = addIfDifferent
-[include]
-	path = ~/.config/git/config-local

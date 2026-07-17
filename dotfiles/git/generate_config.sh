@@ -91,5 +91,3 @@ configure merge.tool 'nvimdiff1'
 configure mergetool.keepBackup false
 configure trailer.ifExists 'addIfDifferent'
 
-configure include.path '~/.config/git/config-local'
-
