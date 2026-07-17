@@ -36,7 +36,7 @@ custom_medium_format="$commit_long$decorations%n"\
 "%C(black italic)$rule%C(reset)"
 custom_reflog_format="$commit_short$decorations $reflog_selector %gs"
 
-configure() { git config --file ~/.home/dotfiles/git/.gitconfig "$@"; }
+configure() { git config --file ~/.home/dotfiles/git/.config/git/config "$@"; }
 
 configure pretty.custom-oneline "$custom_oneline_format"
 configure pretty.custom-medium "$custom_medium_format"
@@ -80,7 +80,7 @@ configure alias.shlf '!git -C $SHLF_DIR'
 configure blame.coloring 'highlightRecent'
 configure blame.date 'relative'
 configure core.editor 'nvim'
-configure core.excludesFile '~/.gitignore-common'
+configure core.excludesFile '~/.config/git/ignore'
 configure core.hooksPath '~/.config/git/hooks/'
 configure diff.interHunkContext 3
 configure diff.noprefix true
@@ -91,5 +91,5 @@ configure merge.tool 'nvimdiff1'
 configure mergetool.keepBackup false
 configure trailer.ifExists 'addIfDifferent'
 
-configure include.path '~/.gitconfig-local'
+configure include.path '~/.config/git/config-local'
 

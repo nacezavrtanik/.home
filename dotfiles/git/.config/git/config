@@ -45,7 +45,7 @@
 	date = relative
 [core]
 	editor = nvim
-	excludesFile = ~/.gitignore-common
+	excludesFile = ~/.config/git/ignore
 	hooksPath = ~/.config/git/hooks/
 [diff]
 	interHunkContext = 3
@@ -62,4 +62,4 @@
 [trailer]
 	ifExists = addIfDifferent
 [include]
-	path = ~/.gitconfig-local
+	path = ~/.config/git/config-local
