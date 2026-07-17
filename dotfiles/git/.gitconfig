@@ -46,6 +46,7 @@
 [core]
 	editor = nvim
 	excludesFile = ~/.gitignore-common
+	hooksPath = ~/.config/git/hooks/
 [diff]
 	interHunkContext = 3
 	noprefix = true

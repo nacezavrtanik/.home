@@ -81,6 +81,7 @@ configure blame.coloring 'highlightRecent'
 configure blame.date 'relative'
 configure core.editor 'nvim'
 configure core.excludesFile '~/.gitignore-common'
+configure core.hooksPath '~/.config/git/hooks/'
 configure diff.interHunkContext 3
 configure diff.noprefix true
 configure diff.tool 'nvimdiff'

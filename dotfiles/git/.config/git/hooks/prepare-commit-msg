@@ -1,0 +1,25 @@
+#!/bin/bash
+
+msg_file="$1"; msg_source="$2"
+if [[ -n $msg_source ]]; then exit 0; fi
+
+
+comment_out_and_indent() {
+    indent="    "
+    printf -- "$1" | sed "s/^/# $indent/"
+}
+
+files="$(git diff --staged --name-only)"
+log="$(git log --format='%s' -10)"
+
+
+cat << EOF > "$msg_file"
+
+
+# Files:
+$(comment_out_and_indent "$files")
+#
+# Log:
+$(comment_out_and_indent "$log")
+EOF
+
