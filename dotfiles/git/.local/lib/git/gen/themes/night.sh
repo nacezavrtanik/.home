@@ -18,27 +18,27 @@ _gitlib_gen_colors_night() {
     rule='--------------------------------------------------------------------------------'
 
     local pointer separator prefix suffix decoreate
-    pointer="$yellow"" -> "
-    separator="$blue""$comma "
-    prefix="$blue"" ("
-    suffix="$blue""$closing_parenthesis"
+    pointer="$white"" -> "
+    separator="$red""$comma "
+    prefix="$red"" ("
+    suffix="$red""$closing_parenthesis"
     decorate="pointer=$pointer,separator=$separator,prefix=$prefix,suffix=$suffix"
 
     local commit_short commit_long decorations reflog_selector
-    commit_short="%C(blue)%h%C(reset)"
-    commit_long="%C(blue)%H%C(reset)"
+    commit_short="%C(red)%h%C(reset)"
+    commit_long="%C(red bold)%H%C(reset)"
     decorations="%C(auto)%(decorate:$decorate)"
-    reflog_selector="%C(blue)(%C(reset)%C(white bold)%gd%C(reset)%C(blue))%C(reset)"
+    reflog_selector="%C(red)(%C(reset)%C(yellow bold)%gd%C(reset)%C(red))%C(reset)"
 
     local custom_oneline_format custom_medium_format custom_reflog_format
     custom_oneline_format="$commit_short$decorations %s"
     custom_medium_format="$commit_long$decorations%n"\
-"%C(brightblack)Author:%C(auto) %an %C(brightblack italic)<%ae>%C(reset)%n"\
-"%C(brightblack)Date:  %C(auto) %ar %C(brightblack italic)<%ad>%C(reset)%n"\
+"%C(red)Author:%C(auto) %an %C(red italic)<%ae>%C(reset)%n"\
+"%C(red)Date:  %C(auto) %ar %C(red italic)<%ad>%C(reset)%n"\
 "%n"\
-"%C(white bold)%w(0,4)%s%C(reset)%n"\
-"%C(white)%w(0,4,4)%+b%w()%C(reset)%n"\
-"%C(black italic)$rule%C(reset)"
+"%C(cyan bold)%w(0,4)%s%C(reset)%n"\
+"%C(magenta)%w(0,4,4)%+b%w()%C(reset)%n"\
+"%C(red italic)$rule%C(reset)"
     custom_reflog_format="$commit_short$decorations $reflog_selector %gs"
 
     git config --file $file pretty.custom-oneline "$custom_oneline_format"
@@ -46,30 +46,41 @@ _gitlib_gen_colors_night() {
     git config --file $file pretty.custom-reflog "$custom_reflog_format"
     git config --file $file format.pretty 'custom-medium'
 
-    git config --file $file color.advice.hint 'blue'
-    git config --file $file color.blame.repeatedLines 'black italic'
+    git config --file $file color.advice.hint 'green'
+    git config --file $file color.blame.repeatedLines 'red italic'
     git config --file $file color.blame.highlightRecent \
-'brightblack,1 year ago,'\
+'red,1 year ago,'\
+'green,6 months ago,'\
+'yellow,3 months ago,'\
 'blue,1 month ago,'\
-'cyan,2 weeks ago,'\
-'green,1 week ago,'\
-'green bold,1 day ago,'\
-'green bold reverse'
-    git config --file $file color.branch.current 'yellow'
-    git config --file $file color.branch.local 'green'
-    git config --file $file color.branch.remote 'magenta'
-    git config --file $file color.decorate.HEAD 'yellow bold'
-    git config --file $file color.decorate.branch 'green bold'
-    git config --file $file color.decorate.remoteBranch 'magenta bold'
-    git config --file $file color.decorate.stash 'red bold'
-    git config --file $file color.decorate.tag 'cyan bold'
-    git config --file $file color.diff.frag 'blue'
-    git config --file $file color.diff.func 'white bold'
-    git config --file $file color.diff.meta 'brightblack italic'
-    git config --file $file color.diff.whitespace 'red red'
-    git config --file $file color.status.branch 'green bold'
-    git config --file $file color.status.localBranch 'green bold'
-    git config --file $file color.status.remoteBranch 'magenta bold'
-    git config --file $file log.graphColors 'blue'
+'magenta,2 weeks ago,'\
+'cyan,1 week ago,'\
+'cyan bold,1 day ago,'\
+'cyan bold reverse'
+    git config --file $file color.branch.current 'white'
+    git config --file $file color.branch.local 'yellow'
+    git config --file $file color.branch.remote 'yellow'
+    git config --file $file color.decorate.HEAD 'white bold'
+    git config --file $file color.decorate.branch 'yellow bold'
+    git config --file $file color.decorate.remoteBranch 'yellow bold'
+    git config --file $file color.decorate.stash 'white bold'
+    git config --file $file color.decorate.tag 'yellow bold italic'
+    git config --file $file color.diff.context 'magenta'
+    git config --file $file color.diff.frag 'green'
+    git config --file $file color.diff.func 'cyan bold'
+    git config --file $file color.diff.meta 'red italic'
+    git config --file $file color.diff.new 'cyan bold'
+    git config --file $file color.diff.old 'red'
+    git config --file $file color.diff.whitespace 'white white'
+    git config --file $file color.status.added 'cyan bold'
+    git config --file $file color.status.branch 'yellow bold'
+    git config --file $file color.status.changed 'magenta'
+    git config --file $file color.status.header 'red'
+    git config --file $file color.status.localBranch 'yellow bold'
+    git config --file $file color.status.nobranch 'green'
+    git config --file $file color.status.remoteBranch 'yellow bold'
+    git config --file $file color.status.unmerged 'magenta'
+    git config --file $file color.status.untracked 'magenta'
+    git config --file $file log.graphColors 'red'
 }
 

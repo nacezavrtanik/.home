@@ -1,32 +1,41 @@
 [pretty]
-	custom-oneline = %C(blue)%h%C(reset)%C(auto)%(decorate:pointer=%x1b%x5b%x33%x33m -> ,separator=%x1b%x5b%x33%x34m%x2c ,prefix=%x1b%x5b%x33%x34m (,suffix=%x1b%x5b%x33%x34m%x29) %s
-	custom-medium = %C(blue)%H%C(reset)%C(auto)%(decorate:pointer=%x1b%x5b%x33%x33m -> ,separator=%x1b%x5b%x33%x34m%x2c ,prefix=%x1b%x5b%x33%x34m (,suffix=%x1b%x5b%x33%x34m%x29)%n%C(brightblack)Author:%C(auto) %an %C(brightblack italic)<%ae>%C(reset)%n%C(brightblack)Date:  %C(auto) %ar %C(brightblack italic)<%ad>%C(reset)%n%n%C(white bold)%w(0,4)%s%C(reset)%n%C(white)%w(0,4,4)%+b%w()%C(reset)%n%C(black italic)--------------------------------------------------------------------------------%C(reset)
-	custom-reflog = %C(blue)%h%C(reset)%C(auto)%(decorate:pointer=%x1b%x5b%x33%x33m -> ,separator=%x1b%x5b%x33%x34m%x2c ,prefix=%x1b%x5b%x33%x34m (,suffix=%x1b%x5b%x33%x34m%x29) %C(blue)(%C(reset)%C(white bold)%gd%C(reset)%C(blue))%C(reset) %gs
+	custom-oneline = %C(red)%h%C(reset)%C(auto)%(decorate:pointer=%x1b%x5b%x33%x37m -> ,separator=%x1b%x5b%x33%x31m%x2c ,prefix=%x1b%x5b%x33%x31m (,suffix=%x1b%x5b%x33%x31m%x29) %s
+	custom-medium = %C(red bold)%H%C(reset)%C(auto)%(decorate:pointer=%x1b%x5b%x33%x37m -> ,separator=%x1b%x5b%x33%x31m%x2c ,prefix=%x1b%x5b%x33%x31m (,suffix=%x1b%x5b%x33%x31m%x29)%n%C(red)Author:%C(auto) %an %C(red italic)<%ae>%C(reset)%n%C(red)Date:  %C(auto) %ar %C(red italic)<%ad>%C(reset)%n%n%C(cyan bold)%w(0,4)%s%C(reset)%n%C(magenta)%w(0,4,4)%+b%w()%C(reset)%n%C(red italic)--------------------------------------------------------------------------------%C(reset)
+	custom-reflog = %C(red)%h%C(reset)%C(auto)%(decorate:pointer=%x1b%x5b%x33%x37m -> ,separator=%x1b%x5b%x33%x31m%x2c ,prefix=%x1b%x5b%x33%x31m (,suffix=%x1b%x5b%x33%x31m%x29) %C(red)(%C(reset)%C(yellow bold)%gd%C(reset)%C(red))%C(reset) %gs
 [format]
 	pretty = custom-medium
 [color "advice"]
-	hint = blue
+	hint = green
 [color "blame"]
-	repeatedLines = black italic
-	highlightRecent = brightblack,1 year ago,blue,1 month ago,cyan,2 weeks ago,green,1 week ago,green bold,1 day ago,green bold reverse
+	repeatedLines = red italic
+	highlightRecent = red,1 year ago,green,6 months ago,yellow,3 months ago,blue,1 month ago,magenta,2 weeks ago,cyan,1 week ago,cyan bold,1 day ago,cyan bold reverse
 [color "branch"]
-	current = yellow
-	local = green
-	remote = magenta
+	current = white
+	local = yellow
+	remote = yellow
 [color "decorate"]
-	HEAD = yellow bold
-	branch = green bold
-	remoteBranch = magenta bold
-	stash = red bold
-	tag = cyan bold
+	HEAD = white bold
+	branch = yellow bold
+	remoteBranch = yellow bold
+	stash = white bold
+	tag = yellow bold italic
 [color "diff"]
-	frag = blue
-	func = white bold
-	meta = brightblack italic
-	whitespace = red red
+	frag = green
+	func = cyan bold
+	meta = red italic
+	whitespace = white white
+	new = cyan bold
+	old = red
+	context = magenta
 [color "status"]
-	branch = green bold
-	localBranch = green bold
-	remoteBranch = magenta bold
+	branch = yellow bold
+	localBranch = yellow bold
+	remoteBranch = yellow bold
+	header = red
+	added = cyan bold
+	changed = magenta
+	unmerged = magenta
+	untracked = magenta
+	nobranch = green
 [log]
-	graphColors = blue
+	graphColors = red

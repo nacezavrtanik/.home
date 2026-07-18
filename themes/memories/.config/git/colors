@@ -24,9 +24,18 @@
 	func = white bold
 	meta = brightblack italic
 	whitespace = red red
+	new = green
+	old = red
+	context = white
 [color "status"]
 	branch = green bold
 	localBranch = green bold
 	remoteBranch = magenta bold
+	header = white
+	added = green
+	changed = red
+	unmerged = red
+	untracked = red
+	nobranch = blue
 [log]
 	graphColors = blue
