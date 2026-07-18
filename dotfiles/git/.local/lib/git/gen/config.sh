@@ -1,32 +1,28 @@
 
-set -eu
-
-_gitlib_gen__configure_config() {
-    git config --file ~/.home/dotfiles/git/.config/git/config "$@"
-}
-
 _gitlib_gen_config() {
-    _gitlib_gen__configure_config include.path '~/.config/git/colors'
-    _gitlib_gen__configure_config advice.detachedHead false
-    _gitlib_gen__configure_config advice.statusHints false
-    _gitlib_gen__configure_config advice.suggestDetachingHead false
-    _gitlib_gen__configure_config alias.adog 'log --all --graph --pretty=custom-oneline'
-    _gitlib_gen__configure_config alias.df 'difftool'
-    _gitlib_gen__configure_config alias.mr 'mergetool'
-    _gitlib_gen__configure_config alias.rl 'log --walk-reflogs --pretty=custom-reflog'
-    _gitlib_gen__configure_config alias.shlf '!git -C $SHLF_DIR'
-    _gitlib_gen__configure_config blame.coloring 'highlightRecent'
-    _gitlib_gen__configure_config blame.date 'relative'
-    _gitlib_gen__configure_config core.editor 'nvim'
-    _gitlib_gen__configure_config core.excludesFile '~/.config/git/ignore'
-    _gitlib_gen__configure_config core.hooksPath '~/.config/git/hooks/'
-    _gitlib_gen__configure_config diff.interHunkContext 3
-    _gitlib_gen__configure_config diff.noprefix true
-    _gitlib_gen__configure_config diff.tool 'nvimdiff'
-    _gitlib_gen__configure_config difftool.prompt false
-    _gitlib_gen__configure_config init.defaultBranch 'main'
-    _gitlib_gen__configure_config merge.tool 'nvimdiff1'
-    _gitlib_gen__configure_config mergetool.keepBackup false
-    _gitlib_gen__configure_config trailer.ifExists 'addIfDifferent'
+    local file=~/.home/dotfiles/git/.config/git/config
+
+    git config --file $file include.path '~/.config/git/colors'
+    git config --file $file advice.detachedHead false
+    git config --file $file advice.statusHints false
+    git config --file $file advice.suggestDetachingHead false
+    git config --file $file alias.adog 'log --all --graph --pretty=custom-oneline'
+    git config --file $file alias.df 'difftool'
+    git config --file $file alias.mr 'mergetool'
+    git config --file $file alias.rl 'log --walk-reflogs --pretty=custom-reflog'
+    git config --file $file alias.shlf '!git -C $SHLF_DIR'
+    git config --file $file blame.coloring 'highlightRecent'
+    git config --file $file blame.date 'relative'
+    git config --file $file core.editor 'nvim'
+    git config --file $file core.excludesFile '~/.config/git/ignore'
+    git config --file $file core.hooksPath '~/.config/git/hooks/'
+    git config --file $file diff.interHunkContext 3
+    git config --file $file diff.noprefix true
+    git config --file $file diff.tool 'nvimdiff'
+    git config --file $file difftool.prompt false
+    git config --file $file init.defaultBranch 'main'
+    git config --file $file merge.tool 'nvimdiff1'
+    git config --file $file mergetool.keepBackup false
+    git config --file $file trailer.ifExists 'addIfDifferent'
 }
 
