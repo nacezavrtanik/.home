@@ -20,6 +20,8 @@ _gitlib_gen_config() {
     git config --file $file diff.noprefix true
     git config --file $file diff.tool 'nvimdiff'
     git config --file $file difftool.prompt false
+    git config --file $file gpg.format 'ssh'
+    git config --file $file gpg.ssh.allowedSignersFile '~/.config/git/allowed_signers'
     git config --file $file init.defaultBranch 'main'
     git config --file $file merge.tool 'nvimdiff1'
     git config --file $file mergetool.keepBackup false
