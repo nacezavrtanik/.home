@@ -71,7 +71,7 @@ _gitlib_gen_colors_night() {
     git config --file $file color.diff.meta 'red italic'
     git config --file $file color.diff.new 'cyan bold'
     git config --file $file color.diff.old 'red'
-    git config --file $file color.diff.whitespace 'white white'
+    git config --file $file color.diff.whitespace 'white'
     git config --file $file color.status.added 'cyan bold'
     git config --file $file color.status.branch 'yellow bold'
     git config --file $file color.status.changed 'magenta'

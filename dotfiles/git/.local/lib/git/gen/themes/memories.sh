@@ -69,7 +69,7 @@ _gitlib_gen_colors_memories() {
     git config --file $file color.diff.meta 'brightblack italic'
     git config --file $file color.diff.new 'green'
     git config --file $file color.diff.old 'red'
-    git config --file $file color.diff.whitespace 'red red'
+    git config --file $file color.diff.whitespace 'red'
     git config --file $file color.status.added 'green'
     git config --file $file color.status.branch 'green bold'
     git config --file $file color.status.changed 'red'

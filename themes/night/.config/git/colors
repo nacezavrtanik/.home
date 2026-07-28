@@ -23,7 +23,7 @@
 	frag = green
 	func = cyan bold
 	meta = red italic
-	whitespace = white white
+	whitespace = white
 	new = cyan bold
 	old = red
 	context = magenta
