@@ -1,5 +1,6 @@
 
 LOCAL = \
+	~/.profile-local \
 	~/.bashrc-local \
 	~/.vimrc-local \
 	~/.gitconfig \

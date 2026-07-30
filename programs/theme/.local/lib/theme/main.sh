@@ -24,4 +24,5 @@ touch ~/.config/alacritty/alacritty.toml
 if tmux has-session 2>/dev/null; then
     tmux source-file ~/.config/tmux/tmux.colors.conf
 fi
-. ~/.config/bash/vt/colors.sh
+. ~/.config/shell/vt/colors.sh
+. ~/.config/shell/fzf/colors.sh

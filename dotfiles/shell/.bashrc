@@ -51,23 +51,14 @@ fi
 
 set -o vi
 bind -m vi-insert '"\C-l": clear-screen'
-export EDITOR=nvim
-export VISUAl=nvim
 
-. ~/.config/bash/vt/config.sh
-. ~/.config/bash/prompt/config.sh
-. ~/.config/bash/fzf/config.sh
+. ~/.config/shell/prompt/config.sh
 
 alias bat='batcat'
 alias tree='tree --gitfile ~/.config/git/ignore'
 
 . ~/repos/shlf/lib/shlflib.sh
 shlflib_register_completion
-export SHLF_DIR=~/repos/shelf
-export SHLF_EDITOR='nvim -O'
-export SHLF_PAGER='batcat --style=plain --color=always'
-export SHLF_GREP='rg --line-number --color=always'
-export SHLF_PICKER='fzf --preview="shlf --show {}"'
 
 
 . ~/.bashrc-local

@@ -1,4 +1,4 @@
-. ~/.config/bash/fzf/colors.sh
+. ~/.config/shell/fzf/colors.sh
 
 export FZF_DEFAULT_OPTS="
 -i --cycle --no-scrollbar --scroll-off=5 --no-info
