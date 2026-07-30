@@ -29,5 +29,8 @@ export SHLF_PAGER='batcat --style=plain --color=always'
 export SHLF_GREP='rg --line-number --color=always'
 export SHLF_PICKER='fzf --preview="shlf --show {}"'
 
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)" > /dev/null
+fi
 
 . "$HOME/.profile-local"

@@ -1,7 +1,8 @@
 
 LOCAL = \
-	~/.profile-local \
 	~/.bashrc-local \
+	~/.bash_logout-local \
+	~/.profile-local \
 	~/.vimrc-local \
 	~/.gitconfig \
 	~/.config/alacritty/local.toml \
